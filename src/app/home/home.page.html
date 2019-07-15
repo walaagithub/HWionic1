@@ -1,14 +1,19 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="medium">
+    
     <ion-title>
-      Ionic Blank
+      {{title}}
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="ion-padding">
-    The world is your oyster.
-    <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs/">docs</a> will be your guide.</p>
-  </div>
+<ion-content padding>
+  
+    <!--this option used path to go login page-->
+    <!-- <ion-button slot="start" text="Go" color="danger" href="/login">Go</ion-button> -->
+
+
+    <!--this option used click function to go login page-->
+    <ion-button  color="danger"  (click)="jump()">Go</ion-button>
+    
 </ion-content>
